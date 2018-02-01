@@ -1,8 +1,6 @@
-
-
 <!DOCTYPE html>
-<html xmlns="http://www.w3.org/1999/xhtml" lang="en">
-   <!-- Mirrored from www.una.edu/purchasing/university-print-shop.html by HTTrack Website Copier/3.x [XR&CO'2014], Thu, 01 Feb 2018 20:13:37 GMT -->
+<html data-ng-app="UNA" id="ng-app" lang="en">
+   <!-- Mirrored from www.una.edu/purchasing/order-copy-paper.html by HTTrack Website Copier/3.x [XR&CO'2014], Thu, 01 Feb 2018 20:13:51 GMT -->
    <!-- Added by HTTrack -->
    <meta http-equiv="content-type" content="text/html;charset=UTF-8" />
    <!-- /Added by HTTrack -->
@@ -20,15 +18,10 @@
       <meta content="university, college, alabama, southern, florence, shoals, alabama university, public, academics, degree, major, southeast, lions" name="keywords"/>
       <meta content="Alabama’s oldest public 4-year university located in an area on the Tennessee River known as the Shoals: Florence, Tuscumbia, Muscle Shoals, Sheffield" name="description"/>
       <meta content="University of North Alabama" name="author"/>
-      <meta content="https://www.una.edu/images/shared.jpg" property="og:image"/>
-      <meta content="summary_large_image" name="twitter:card"/>
-      <meta content="@north_alabama" name="twitter:site"/>
-      <meta content="@abstractrandom" name="twitter:creator"/>
-      <meta content="University of North Alabama | Established in 1830" name="twitter:title"/>
-      <meta content="Alabama's oldest public 4-year university located within a four-city area on the Tennessee River known as the Shoals" name="twitter:description"/>
-      <meta content="https://www.una.edu/images/shared.png" name="twitter:image"/>
       <meta content="9e8df25739c8ec6d-33c4032e53fe30ea-gc5c3eb5dfc23324a-b" name="google-translate-customization"/>
-      <title>University Print Shop - University of North Alabama</title>
+      <title>
+         Order Copy Paper - University of North Alabama
+      </title>
       <link href="https://www.una.edu/" rel="home"/>
       <link href="../images/xfavicon.png.pagespeed.ic.G_yhM-VEyL.png" rel="icon" type="image/png"/>
       <link href="https://www.una.edu/images/favicon.ico" rel="shortcut icon"/>
@@ -43,6 +36,15 @@
       <script src="https://cdnjs.cloudflare.com/ajax/libs/html5shiv/3.7.2/html5shiv.min.js"></script>
       <script src="https://cdnjs.cloudflare.com/ajax/libs/respond.js/1.4.2/respond.min.js"></script>
       <![endif]-->
+      <script src="../../cdnjs.cloudflare.com/ajax/libs/angular.js/1.4.3/angular.js"></script>
+      <script src="../../cdnjs.cloudflare.com/ajax/libs/angular.js/1.4.3/angular-route.js"></script>
+      <script src="../../cdnjs.cloudflare.com/ajax/libs/angular.js/1.4.3/angular-resource.js"></script>
+      <script src="../../cdnjs.cloudflare.com/ajax/libs/angular-ui-bootstrap/0.13.2/ui-bootstrap-tpls.min.js"></script>
+      <script src="../../cdnjs.cloudflare.com/ajax/libs/danialfarid-angular-file-upload/10.1.7/ng-file-upload.js"></script>
+      <script src="../../cdnjs.cloudflare.com/ajax/libs/angular-recaptcha/4.0.3/angular-recaptcha.min.js"></script>
+      <script src="../js/app.js%2bfilters.js%2bcontrollers.js.pagespeed.jc.Af8gvVdrhD.js"></script><script>eval(mod_pagespeed_nsEfSRWcc1);</script>
+      <script>eval(mod_pagespeed_PgdMVueF2I);</script>
+      <script>eval(mod_pagespeed_2QRBNLRHso);</script>
       <base target="_top"/>
    </head>
    <body id="inside">
@@ -51,23 +53,21 @@
          <iframe height="0" src="https://www.googletagmanager.com/ns.html?id=GTM-NXQBP6" style="display:none;visibility:hidden" width="0"></iframe>
       </noscript>
       <!-- End Google Tag Manager (noscript) -->
-      <!--div id="google_translate_element"></div>
-         <script type="text/javascript">
-           function googleTranslateElementInit()
-           {
-             new google.translate.TranslateElement
-             (
-               {
-                 pageLanguage: 'en',
-                 layout: google.translate.TranslateElement.FloatPosition.TOP_LEFT,
-                 gaTrack: true,
-                 gaId: 'UA-5519656-1'
-               },
-               'google_translate_element'
-             );
-           }
-         </script>
-         <script src="//translate.google.com/translate_a/element.js?cb=googleTranslateElementInit" type="text/javascript"></script-->
+      <!--div id="google_translate_element"></div><script type="text/javascript">
+         function googleTranslateElementInit()
+         {
+           new google.translate.TranslateElement
+           (
+             {
+               pageLanguage: 'en',
+               layout: google.translate.TranslateElement.FloatPosition.TOP_LEFT,
+               gaTrack: true,
+               gaId: 'UA-5519656-1'
+             },
+             'google_translate_element'
+           );
+         }
+         </script><script src="//translate.google.com/translate_a/element.js?cb=googleTranslateElementInit" type="text/javascript"></script-->
       <!--[if lt IE 10]>
       <div style='clear: both; height: 42px; margin-top: 30px; padding: 0 0 0 15px; position: relative; background-color: #db9f11; z-index: 100; text-align: center;'>
          <a href="http://windows.microsoft.com/en-US/internet-explorer/products/ie/home?ocid=ie6_countdown_bannercode">
@@ -288,11 +288,18 @@
       <div class="container-fluid" id="programs-calendar">
          <div class="container">
             <div class="row row-offcanvas row-offcanvas-left">
-               <p class="pull-left visible-xs visible-sm"><button class="btn btn-primary btn-xs" data-toggle="offcanvas" type="button">&gt;</button></p>
+               <p class="pull-left visible-xs visible-sm">
+                  <button class="btn btn-primary btn-xs" data-toggle="offcanvas" type="button">
+                  &gt;
+                  </button>
+               </p>
                <!-- .sidebar-module -->
                <aside class="sidebar-module col-xs-12 col-md-3 sidebar-offcanvas">
-                  <p class="impact"></p>
-                  <div class="list-group"><a class="list-group-item" href="index.html">Home</a><a class="list-group-item" href="procurement-policy.html">Procurement Policy</a><a class="list-group-item" href="purchase-order-process.html">Purchase Order Process</a><a class="list-group-item" href="online-requisition-instructions.html">Online Requisition Instructions</a><a class="list-group-item" href="bid-process.html">Bid Process</a><a class="list-group-item" href="UNA_PCARD_Policy_110414.pdf" target="_blank" title="This link will open in a new window.">Purchasing Card Policy</a><a class="list-group-item" href="staples-online.html">Staples Online</a><a class="list-group-item" href="local-procurement.html">Local Procurement</a><a class="list-group-item active" href="university-print-shop.html">University Print Shop</a><a class="list-group-item" href="forms.html">Forms</a><a class="list-group-item" href="https://www.una.edu/manecard/index.html">Mane Card Office</a></div>
+                  <p class="impact">
+                  </p>
+                  <div class="list-group">
+                     <a class="list-group-item" href="index.html">Home</a><a class="list-group-item" href="procurement-policy.html">Procurement Policy</a><a class="list-group-item" href="purchase-order-process.html">Purchase Order Process</a><a class="list-group-item" href="online-requisition-instructions.html">Online Requisition Instructions</a><a class="list-group-item" href="bid-process.html">Bid Process</a><a class="list-group-item" href="UNA_PCARD_Policy_110414.pdf" target="_blank" title="This link will open in a new window.">Purchasing Card Policy</a><a class="list-group-item" href="staples-online.html">Staples Online</a><a class="list-group-item" href="local-procurement.html">Local Procurement</a><a class="list-group-item" href="university-print-shop.html">University Print Shop</a><a class="list-group-item" href="forms.html">Forms</a><a class="list-group-item" href="https://www.una.edu/manecard/index.html">Mane Card Office</a>
+                  </div>
                   <div class="panel panel-default">
                      <div class="panel-heading">
                         <h3 class="panel-title">Contact Information</h3>
@@ -307,15 +314,12 @@
                </aside>
                <!-- /.sidebar-module -->
                <!-- .mainContent -->
-               <div class="mainContent col-xs-12 col-sm-12 col-md-9">
-				    <h1>University Print Shop</h1>  <section class="col-md-8"><p class="highlight"><a href="price-list.html" target="_blank" title="Print Shop Pricing List"><b>Price List</b></a></p>
-					<p class="highlight"><a href="docs/LETTERHEAD%20ORDER%20FORM.pdf" target="_blank" title="Letterhead and Envelope Order Form"><strong>Letterhead and Envelope Order Form</strong></a></p>
-					<p class="highlight"><a href="order-copy-paper.html" title="Order Copy Paper"><strong>Order Copy Paper</strong></a></p>
-					<p class="highlight"><strong><a href="docs/Print%20Shop%20Order%20Form%20Fillable.pdf" target="_blank" title="Print Shop Order Form">Print Shop Order Form</a></strong></p>
-					<p class="highlight"><a href="docs/Supply%20Store%20Order%20Form.pdf" title="Supply Store Order Form"><strong>Supply Store Order Form</strong></a></p></section> 
-					<img src="img/una.png" alt="Picture Of The Print Shop"> 
-					<p> INFO ABOUT THE PRINT SHOP.....................</p>
-					
+               <div class="mainContent col-xs-12 col-sm-12 col-md-9" data-ng-controller="FormBuilderCtrl">
+                  <center><h1>Pricing</h1></center>
+                  <img src="img/PriceList1.png" alt="Pricing" width="800px"> 
+				  <img src="img/PriceList2.png" alt="Pricing" width="800px"> 
+				  <img src="img/PriceList3.png" alt="Pricing" width="800px"> 
+				  <img src="img/PriceList4.png" alt="Pricing" width="800px"> 
                </div>
                <!-- /.mainContent -->
             </div>
@@ -373,9 +377,6 @@
          <script src="../js/offcanvas.js%2bnav.js.pagespeed.jc.-X33pZwrWe.js"></script><script>eval(mod_pagespeed_i1wTGLnewq);</script>
          <script>eval(mod_pagespeed_Yq7u2vuWfc);</script>
       </system-region>
-      <script>$.fn.serializeObject=function(){"use strict";var a={},b=function(b,c){var d=a[c.name];"undefined"!=typeof d&&d!==null?$.isArray(d)?d.push(c.value):a[c.name]=[d,c.value]:a[c.name]=c.value};return $.each(this.serializeArray(),b),a};</script>
-      <script src="https://bridge-api.collegiseducation.com/api/bridgescript/?id=9A2A2A6A-04D6-4B94-902C-008310026070"></script>
    </body>
-   <!-- Mirrored from www.una.edu/purchasing/university-print-shop.html by HTTrack Website Copier/3.x [XR&CO'2014], Thu, 01 Feb 2018 20:13:45 GMT -->
+   <!-- Mirrored from www.una.edu/purchasing/order-copy-paper.html by HTTrack Website Copier/3.x [XR&CO'2014], Thu, 01 Feb 2018 20:13:52 GMT -->
 </html>
-
